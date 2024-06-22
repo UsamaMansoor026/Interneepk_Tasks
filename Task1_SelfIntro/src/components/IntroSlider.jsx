@@ -37,10 +37,11 @@ const IntroSlider = () => {
             key={index}
             className={`mySlides ${currentSlide === index ? "active" : ""}`}
           >
-            <div className="mySlidesContainer">
-              <p className="question">{ques.question}</p>
-              <p className="answer">{ques.answer}</p>
-            </div>
+            <p className="question">{ques.question}</p>
+            <p className="answer">{ques.answer}</p>
+            {/* <div className="mySlidesContainer">
+              
+            </div> */}
           </div>
         ))}
 
