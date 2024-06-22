@@ -1,8 +1,7 @@
-# React + Vite
+# Task 1 at Internee.pk
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Self Introduction
 
-Currently, two official plugins are available:
+This is my First Task at internee.pk react internship, in which i have to introduce myself to the fellow internee's.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This task include 6 questions starting from my Name followed by Academic Background, Tech Interest, Hobbies and Future Goals.
