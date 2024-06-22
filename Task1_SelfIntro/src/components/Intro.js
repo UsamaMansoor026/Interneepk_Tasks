@@ -2,7 +2,8 @@ export const IntroQuesAns = [
   {
     id: 1,
     question: "Name",
-    answer: "My name is Usama Mansoor, but my close friends call me Maan",
+    answer:
+      "My name is Usama Mansoor, a passionate Web Developer. My expertise are: HTML5, CSS3, Tailwind, JavaScript and React.",
   },
   {
     id: 2,
