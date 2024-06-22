@@ -8,7 +8,7 @@ export const IntroQuesAns = [
     id: 2,
     question: "Academic Background",
     answer:
-      " Major: I have recently completed my final semester exam for my Bachelors degree in Computer Science. \n I attended COMSATS University Islamabad.",
+      " I have recently completed my final semester exam for my Bachelors degree in Computer Science. I attended COMSATS University Islamabad.",
   },
   {
     id: 3,
@@ -32,6 +32,6 @@ export const IntroQuesAns = [
     id: 6,
     question: "Future Goals",
     answer:
-      "During my time with Internee.pk, I aim to gain hands-on experience and work on real-world problems. I am eager to enhance my skills, particularly in web development, and contribute to impactful projects. I hope to expand my professional network and develop both my technical and professional abilities.",
+      "During my time with Internee.pk, I aim to gain hands-on experience and work on real-world problems. I am eager to enhance my skills, particularly in web development, and contribute to impactful projects.",
   },
 ];
