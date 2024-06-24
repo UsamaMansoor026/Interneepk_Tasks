@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#43a724",
+        primary: "#35b14a",
         secondary: "#21282E",
         paraColor: "#717275",
       },
