@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Header = () => {
   return (
-    <nav className="flex items-center justify-between container py-7 bg-pink-200 mx-auto">
+    <nav className="flex items-center justify-between px-16 py-7 bg-pink-200 mx-auto">
       {/* Logo */}
       <div>
         <img
@@ -13,7 +13,9 @@ const Header = () => {
           alt="Internee.pk"
         />
       </div>
-      <ul className="flex items-center gap-2">
+
+      {/* Links and Buttons */}
+      <ul className="nav-links flex items-center">
         <li className="li">
           <a href="/">Internship</a>
         </li>
