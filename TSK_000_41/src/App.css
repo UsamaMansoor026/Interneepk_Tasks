@@ -7,6 +7,7 @@
 main {
   padding-inline: 64px;
   padding-top: 16px;
+  overflow: hidden;
 }
 
 .menu {
@@ -94,5 +95,17 @@ main {
     font-weight: 500;
     font-size: 20px;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    padding-inline: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    padding-inline: 30px;
   }
 }

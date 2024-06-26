@@ -1,0 +1,37 @@
+.tagline {
+  font-size: 54px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  color: #21282e;
+  letter-spacing: -0.05em;
+  line-height: 1.3;
+}
+
+.secSubText {
+  width: 80%;
+  color: #21282e;
+  font-size: 19px;
+  opacity: 0.8;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .tagline {
+    font-size: 35px;
+  }
+
+  .secSubText {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tagline {
+    font-size: 22px;
+  }
+}

@@ -3,6 +3,53 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* Hero Left */
+.tagline {
+  font-size: 54px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  color: #21282e;
+  letter-spacing: -0.05em;
+  line-height: 1.3;
+}
+
+.typeContainer {
+  position: relative;
+  margin-block: 10px;
+  width: 90%;
+  height: 135px;
+}
+
+.bar {
+  position: absolute;
+  height: 70px;
+  width: 5px;
+  background: #35b14a;
+}
+
+.subText {
+  color: #21282e;
+  font-size: 19px;
+  opacity: 0.8;
+  font-weight: 400;
+  width: 95%;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-block: 19px;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+
+/* Hero Right */
 .heroRight img {
   width: 100%;
   object-fit: cover;
@@ -17,5 +64,47 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px) {
+  .hero {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .heroRight {
+    display: flex;
+    justify-content: center;
+  }
+
+  .heroRight img {
+    width: 90%;
+    aspect-ratio: 1/1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tagline {
+    font-size: 40px;
+  }
+
+  .subText {
+    width: 100%;
+  }
+
+  .typeContainer {
+    height: 120px;
+  }
+
+  .bar {
+    height: 65px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btnContainer {
+    flex-direction: column;
   }
 }

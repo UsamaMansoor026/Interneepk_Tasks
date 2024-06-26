@@ -29,7 +29,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between relative px-16 py-7 shadow-lg mx-auto">
+    <nav className="flex items-center justify-between relative px-9 lg:px-16 py-7 shadow-lg mx-auto">
       {/* Logo */}
       <div>
         <img
