@@ -4,10 +4,11 @@ import Hero from "../components/Hero/Hero";
 import { internshipCards, logos } from "../assets/assets";
 import Internships from "../components/Internship/Internships";
 import { InternshipImageCard } from "../components/Card/Card";
+import Blog from "../components/Blog/Blog";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Hero />
 
       <section className="mt-20 md:mt-36">
@@ -51,7 +52,10 @@ const Home = () => {
           <InternshipImageCard item={item} />
         ))}
       </section>
-    </div>
+
+      {/* Blog */}
+      <Blog />
+    </>
   );
 };
 
