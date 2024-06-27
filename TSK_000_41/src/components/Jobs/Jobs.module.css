@@ -1,0 +1,39 @@
+.jobSection {
+  margin-top: 90px;
+}
+
+.jobWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.jobImagePortion {
+  animation: leftToRight 2s;
+}
+
+.jobImagePortion img {
+  animation: float 3s alternate infinite;
+  animation-delay: 2s;
+}
+
+@keyframes leftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}

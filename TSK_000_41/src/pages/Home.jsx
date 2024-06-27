@@ -5,6 +5,7 @@ import { internshipCards, logos } from "../assets/assets";
 import Internships from "../components/Internship/Internships";
 import { InternshipImageCard } from "../components/Card/Card";
 import Blog from "../components/Blog/Blog";
+import Jobs from "../components/Jobs/Jobs";
 
 const Home = () => {
   return (
@@ -55,6 +56,9 @@ const Home = () => {
 
       {/* Blog */}
       <Blog />
+
+      {/* Jobs */}
+      <Jobs />
     </>
   );
 };

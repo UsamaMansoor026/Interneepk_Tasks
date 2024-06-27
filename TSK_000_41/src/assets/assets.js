@@ -17,16 +17,23 @@ import TechnicalWriting from "./internship/technical writing.webp";
 import VideoEditing from "./internship/video editing.webp";
 
 /* Jobs Images */
-/* import Instructor from "./jobs/instructor.png";
+import Instructor from "./jobs/instructor.png";
 import Job from "./jobs/job.png";
 import LMS from "./jobs/lms.png";
-import Task from "./icons/task.png"; */
+import Task from "./jobs/task.webp";
 
 export const galleryImages = {
   Gallery1,
   Gallery2,
   Gallery3,
   Gallery4,
+};
+
+export const jobsImages = {
+  Instructor,
+  Job,
+  LMS,
+  Task,
 };
 
 export const logos = {
