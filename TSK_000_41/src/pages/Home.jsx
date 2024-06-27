@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Home.module.css";
 import Hero from "../components/Hero/Hero";
 import { logos } from "../assets/assets";
+import Internships from "../components/Internship/Internships";
 
 const Home = () => {
   return (
@@ -21,7 +22,11 @@ const Home = () => {
             thriving IT industry. Internee.pk offers a comprehensive range of
             virtual internship opportunities exclusively in the IT field.
           </p>
+          <p className="font-bold text-lg text-secondary">
+            👇 Click Below and grab your internship now 👇
+          </p>
         </div>
+        <Internships />
       </section>
     </div>
   );
