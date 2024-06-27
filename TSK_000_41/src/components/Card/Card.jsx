@@ -1,11 +1,10 @@
 import React from "react";
 import styles from "./Card.module.css";
-import Button from "../Button";
 
 const Card = ({ internship }) => {
   return (
     <>
-      <article className="text-center mx-[10px] mt-[20px] mb-[50px]">
+      <article className={styles.verticalCard}>
         <div className={styles.imageWrapper}>
           <img
             className={styles.internshipImage}
@@ -17,7 +16,7 @@ const Card = ({ internship }) => {
           <h3>{internship.name}</h3>
           <p>{internship.desc}</p>
           <div>
-            <Button isBackground={true}>Apply Now</Button>
+            <button className={styles.smallBtn}>Apply Now</button>
           </div>
         </div>
       </article>
@@ -26,3 +25,18 @@ const Card = ({ internship }) => {
 };
 
 export default Card;
+
+export const InternshipImageCard = ({ item }) => {
+  return (
+    <article className={styles.internshipCard}>
+      <div>
+        <img className={styles.internshipCardImage} src={item.image} alt="" />
+      </div>
+      <div className={styles.internshipCardContent}>
+        <h2 className={styles.internshipCardName}>{item.name}</h2>
+        <hr />
+        <button className={styles.smallBtn}>Apply Now</button>
+      </div>
+    </article>
+  );
+};

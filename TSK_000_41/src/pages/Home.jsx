@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./Home.module.css";
 import Hero from "../components/Hero/Hero";
-import { logos } from "../assets/assets";
+import { internshipCards, logos } from "../assets/assets";
 import Internships from "../components/Internship/Internships";
+import { InternshipImageCard } from "../components/Card/Card";
 
 const Home = () => {
   return (
@@ -27,6 +28,28 @@ const Home = () => {
           </p>
         </div>
         <Internships />
+      </section>
+
+      {/* ======== */}
+      <div className={styles.container}>
+        <p>
+          <span>Internships every months</span> Introducing Internee.pk, the
+          ultimate platform designed to turbocharge the IT sector in Pakistan!
+          We recognize the immense potential of talented individuals in the
+          country and aim to bridge the gap between them and the thriving IT
+          industry. Internee.pk offers a comprehensive range of virtual
+          internship opportunities exclusively in the IT field.
+        </p>
+        <div>
+          <button className={styles.smallBtn}>Browse Internship</button>
+        </div>
+      </div>
+
+      {/* ======= */}
+      <section className={styles.internshipWrapper}>
+        {internshipCards.map((item) => (
+          <InternshipImageCard item={item} />
+        ))}
       </section>
     </div>
   );
