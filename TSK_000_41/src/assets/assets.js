@@ -38,19 +38,19 @@ export const internships = [
   {
     id: 1,
     image: BackendDev,
-    name: "Backend Development",
+    name: "Backend Internship",
     desc: "Backend internship? It's not just about learning; it's about crafting scalable solutions that power the digital landscape. Throughout the internship, you'll engage in hands-on projects, tackling real-world challenges alongside seasoned developers who are passionate about mentoring the next generation.",
   },
   {
     id: 2,
     image: ChatBotDev,
-    name: "Chatbot Development",
+    name: "Chatbot Development Internship",
     desc: "Our program is designed for enthusiasts eager to explore natural language processing, machine learning, and the art of crafting intelligent conversational agents. From understanding user intents to deploying chatbots in real-world scenarios, you'll gain hands-on experience with cutting-edge technologies.",
   },
   {
     id: 3,
     image: Cloud,
-    name: "Cloud Computing",
+    name: "Cloud Computing Internship",
     desc: "Internee.pk for your Cloud Computing journey? We offer a comprehensive curriculum crafted by industry experts, ensuring you grasp the intricacies of cloud platforms and services.",
   },
   {

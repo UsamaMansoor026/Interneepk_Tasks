@@ -5,33 +5,38 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
 
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 import { internships } from "../../assets/assets";
 import Card from "../Card/Card";
+import styles from "../Card/Card.module.css";
 
 const Internships = () => {
   return (
-    <section>
+    <section className={styles.internshipSection}>
       <Swiper
+        className={styles.slider}
         breakpoints={{
           600: {
             slidesPerView: 1,
-            spaceBetween: 15,
+            spaceBetween: 1,
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 15,
+            spaceBetween: 1,
           },
-          1000: {
-            slidesPerView: 3,
-            spaceBetween: 15,
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 1,
           },
         }}
+        loop={true}
+        direction="horizontal"
+        autoplay={{ delay: 1500, disableOnInteraction: false }}
         freeMode={true}
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
+        modules={[FreeMode, Pagination, Autoplay]}
       >
         {internships.map((internship, index) => (
           <SwiperSlide key={index}>
@@ -39,6 +44,9 @@ const Internships = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <h2 className="text-center mt-5 pb-8 text-white text-2xl">
+        Learn Skills, <span className="font-bold">Market will me yours.</span>
+      </h2>
     </section>
   );
 };
