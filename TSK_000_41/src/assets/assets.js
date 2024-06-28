@@ -22,6 +22,12 @@ import Job from "./jobs/job.png";
 import LMS from "./jobs/lms.png";
 import Task from "./jobs/task.webp";
 
+/* Icons */
+import Play from "../assets/icons/presentation-play.svg";
+import Account from "../assets/icons/account-multiple-plus-outline.svg";
+import CellphoneLink from "../assets/icons/cellphone-link.svg";
+import PlaylistCheck from "../assets/icons/playlist-check.svg";
+
 export const galleryImages = {
   Gallery1,
   Gallery2,
@@ -39,6 +45,13 @@ export const jobsImages = {
 export const logos = {
   Logo,
   mainLogo,
+};
+
+export const icons = {
+  Play,
+  Account,
+  CellphoneLink,
+  PlaylistCheck,
 };
 
 export const internships = [

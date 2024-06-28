@@ -1,32 +1,19 @@
 .jobSection {
   margin-top: 90px;
+  font-family: "Inter", sans-serif;
 }
 
 .jobWrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 0.8fr 1fr;
   gap: 40px;
   align-items: center;
-}
-
-.jobImagePortion {
-  animation: leftToRight 2s;
 }
 
 .jobImagePortion img {
   animation: float 3s alternate infinite;
   animation-delay: 2s;
-}
-
-@keyframes leftToRight {
-  from {
-    opacity: 0;
-    transform: translateX(-50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 @keyframes float {
@@ -36,4 +23,41 @@
   to {
     transform: translateY(-20px);
   }
+}
+
+.subHeading {
+  font-weight: bold;
+  font-size: 19px;
+  color: #21282e;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 1.2;
+  color: #21282e;
+  margin-block: 10px;
+}
+
+.tagline {
+  color: #717275;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.innerWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 17px;
+}
+
+.item .itemDesc {
+  color: #717275;
+  font-size: 15px;
+}
+
+.item .itemDesc span {
+  color: #21282e;
+  font-weight: bold;
 }
