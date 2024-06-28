@@ -1,3 +1,19 @@
+.shadowDamn {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 10000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.8);
+}
+
 .tagline {
   font-size: 54px;
   font-weight: bold;

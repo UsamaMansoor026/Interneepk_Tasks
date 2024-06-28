@@ -10,6 +10,9 @@ import Jobs from "../components/Jobs/Jobs";
 const Home = () => {
   return (
     <>
+      <div className={styles.shadowDamn}>
+        <img src={logos.mainLogo} alt="Internee.pk" />
+      </div>
       <Hero />
 
       <section className="mt-20 md:mt-36">

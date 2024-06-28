@@ -8,6 +8,11 @@
   grid-template-columns: 0.8fr 1fr;
 }
 
+.chilka2 {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+}
+
 .chilka div {
   grid-column-start: 2;
   margin-left: 14px;
@@ -20,7 +25,15 @@
   align-items: center;
 }
 
-.jobImagePortion img {
+.jobWrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.jobImagePortion img,
+.jobImagePortion2 img {
   animation: float 3s alternate infinite;
   animation-delay: 2s;
 }
@@ -75,14 +88,11 @@
 
 .item img {
   width: 75px;
-  max-height: 75px;
+  height: 75px;
   padding-inline: 15px;
-  /* background: rgb(252, 252, 193); */
+  box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  animation: float 2s alternate infinite;
-  animation-delay: 0.5s;
-  display: block;
-  position: relative;
+  transition: 200ms;
 }
 
 .item img:nth-child(1) {
@@ -102,8 +112,18 @@
 
 @media screen and (max-width: 1000px) {
   .jobWrapper,
-  .chilka {
+  .chilka,
+  .chilka2,
+  .jobWrapper2 {
     grid-template-columns: 1fr;
+  }
+
+  .jobContentPortion2 {
+    grid-row-start: 2;
+  }
+
+  .jobImagePortion2 img {
+    width: 60%;
   }
 
   .chilka div {
@@ -127,7 +147,7 @@
   }
 
   .item img {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .item .itemDesc {
@@ -138,6 +158,10 @@
 @media screen and (max-width: 768px) {
   .innerWrapper {
     grid-template-columns: 1fr;
+  }
+
+  .jobImagePortion2 img {
+    width: 100%;
   }
 
   .heading {

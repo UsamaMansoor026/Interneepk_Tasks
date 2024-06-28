@@ -27,6 +27,13 @@ import Play from "../assets/icons/presentation-play.svg";
 import Account from "../assets/icons/account-multiple-plus-outline.svg";
 import CellphoneLink from "../assets/icons/cellphone-link.svg";
 import PlaylistCheck from "../assets/icons/playlist-check.svg";
+import CloudCheck from "../assets/icons/cloud-check-outline.svg";
+import MagnifyPlus from "../assets/icons/magnify-plus-outline.svg";
+import Info from "../assets/icons/information-outline.svg";
+import Folder from "../assets/icons/folder-multiple-outline.svg";
+import Search from "../assets/icons/text-box-search-outline.svg";
+import ShapeOutline from "../assets/icons/shape-outline.svg";
+import Download from "../assets/icons/download.svg";
 
 export const galleryImages = {
   Gallery1,
@@ -52,6 +59,13 @@ export const icons = {
   Account,
   CellphoneLink,
   PlaylistCheck,
+  CloudCheck,
+  MagnifyPlus,
+  Info,
+  Folder,
+  Search,
+  ShapeOutline,
+  Download,
 };
 
 export const internships = [
