@@ -5,6 +5,12 @@ import { icons, jobsImages } from "../../assets/assets";
 const Jobs = () => {
   return (
     <section className={styles.jobSection}>
+      <div className={styles.chilka}>
+        <div>
+          <p className={styles.subHeading}>Our own task portal</p>
+          <h1 className={styles.heading}>Manage Project Via Own Task Portal</h1>
+        </div>
+      </div>
       {/* 1st Job */}
       <div className={styles.jobWrapper}>
         <div
@@ -13,9 +19,9 @@ const Jobs = () => {
         >
           <img src={jobsImages.Task} alt="" />
         </div>
+
         <div className={styles.jobContentPortion}>
-          <p className={styles.subHeading}>Our own task portal</p>
-          <h1 className={styles.heading}>Manage Project Via Own Task Portal</h1>
+          <p className={styles.subHeading2}>Our own task portal</p>
           <p className={styles.tagline}>
             Welcome to internee.pk task portal. Where Tasks Transform Into
             Skills
@@ -26,9 +32,8 @@ const Jobs = () => {
             {/* 1st Row */}
             {/* 1st child */}
             <div className={styles.item}>
-              <div className={styles.imgWrapper}>
-                <img src={icons.Play} alt="" />
-              </div>
+              <img src={icons.Play} alt="" />
+
               <p className={styles.itemDesc}>
                 <span>Hands on Projects</span> we believe in learning by doing.
                 Dive into hands-on projects that simulate real-world scenarios.
@@ -40,9 +45,8 @@ const Jobs = () => {
 
             {/* 2nd child */}
             <div className={styles.item}>
-              <div className={styles.imgWrapper}>
-                <img className={styles.itemIcon} src={icons.Account} alt="" />
-              </div>
+              <img src={icons.Account} alt="" />
+
               <p className={styles.itemDesc}>
                 <span>How to represent yourself</span> More than just completing
                 tasks, It empowers you to showcase your journey. Every completed
@@ -55,13 +59,8 @@ const Jobs = () => {
             {/* 2nd Row */}
             {/* 3rd child */}
             <div className={styles.item}>
-              <div className={styles.imgWrapper}>
-                <img
-                  className={styles.itemIcon}
-                  src={icons.CellphoneLink}
-                  alt=""
-                />
-              </div>
+              <img src={icons.CellphoneLink} alt="" />
+
               <p className={styles.itemDesc}>
                 <span>SDLC Techniques</span> Understanding the Software
                 Development Life Cycle (SDLC) is pivotal in the tech world.
@@ -72,13 +71,8 @@ const Jobs = () => {
 
             {/* 4th child */}
             <div className={styles.item}>
-              <div className={styles.imgWrapper}>
-                <img
-                  className={styles.itemIcon}
-                  src={icons.PlaylistCheck}
-                  alt=""
-                />
-              </div>
+              <img src={icons.PlaylistCheck} alt="" />
+
               <p className={styles.itemDesc}>
                 <span>Easy to understand</span> Learning shouldn't be
                 complicated. Our tasks are designed to be easily comprehensible,
