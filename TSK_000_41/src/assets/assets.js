@@ -23,20 +23,26 @@ import LMS from "./jobs/lms.png";
 import Task from "./jobs/task.webp";
 
 /* Icons */
-import Play from "../assets/icons/presentation-play.svg";
-import Account from "../assets/icons/account-multiple-plus-outline.svg";
-import CellphoneLink from "../assets/icons/cellphone-link.svg";
-import PlaylistCheck from "../assets/icons/playlist-check.svg";
-import CloudCheck from "../assets/icons/cloud-check-outline.svg";
-import MagnifyPlus from "../assets/icons/magnify-plus-outline.svg";
-import Info from "../assets/icons/information-outline.svg";
-import Folder from "../assets/icons/folder-multiple-outline.svg";
-import Search from "../assets/icons/text-box-search-outline.svg";
-import ShapeOutline from "../assets/icons/shape-outline.svg";
-import Download from "../assets/icons/download.svg";
-import Message from "../assets/icons/message.svg";
-import Shield from "../assets/icons/shield.svg";
-import Card from "../assets/icons/card.svg";
+import Play from "./icons/presentation-play.svg";
+import Account from "./icons/account-multiple-plus-outline.svg";
+import CellphoneLink from "./icons/cellphone-link.svg";
+import PlaylistCheck from "./icons/playlist-check.svg";
+import CloudCheck from "./icons/cloud-check-outline.svg";
+import MagnifyPlus from "./icons/magnify-plus-outline.svg";
+import Info from "./icons/information-outline.svg";
+import Folder from "./icons/folder-multiple-outline.svg";
+import Search from "./icons/text-box-search-outline.svg";
+import ShapeOutline from "./icons/shape-outline.svg";
+import Download from "./icons/download.svg";
+import Message from "./icons/message.svg";
+import Shield from "./icons/shield.svg";
+import Card from "./icons/card.svg";
+
+/* Social Icons */
+import Youtube from "./socialIcons/youtube.svg";
+import Instagram from "./socialIcons/instagram.svg";
+import Facebook from "./socialIcons/facebook.svg";
+import Twitter from "./socialIcons/twitter.svg";
 
 export const galleryImages = {
   Gallery1,
@@ -72,6 +78,13 @@ export const icons = {
   Message,
   Shield,
   Card,
+};
+
+export const socialIcons = {
+  Youtube,
+  Instagram,
+  Facebook,
+  Twitter,
 };
 
 export const internships = [
