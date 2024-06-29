@@ -6,6 +6,7 @@ import Internships from "../components/Internship/Internships";
 import { InternshipImageCard } from "../components/Card/Card";
 import Blog from "../components/Blog/Blog";
 import Jobs from "../components/Jobs/Jobs";
+import WhyUs from "../components/WhyUs/WhyUs";
 
 const Home = () => {
   return (
@@ -62,6 +63,9 @@ const Home = () => {
 
       {/* Jobs */}
       <Jobs />
+
+      {/* why US */}
+      <WhyUs />
     </>
   );
 };

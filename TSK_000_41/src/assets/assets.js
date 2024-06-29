@@ -34,6 +34,7 @@ import Folder from "../assets/icons/folder-multiple-outline.svg";
 import Search from "../assets/icons/text-box-search-outline.svg";
 import ShapeOutline from "../assets/icons/shape-outline.svg";
 import Download from "../assets/icons/download.svg";
+import Message from "../assets/icons/message.svg";
 
 export const galleryImages = {
   Gallery1,
@@ -66,6 +67,7 @@ export const icons = {
   Search,
   ShapeOutline,
   Download,
+  Message,
 };
 
 export const internships = [
