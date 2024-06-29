@@ -35,6 +35,8 @@ import Search from "../assets/icons/text-box-search-outline.svg";
 import ShapeOutline from "../assets/icons/shape-outline.svg";
 import Download from "../assets/icons/download.svg";
 import Message from "../assets/icons/message.svg";
+import Shield from "../assets/icons/shield.svg";
+import Card from "../assets/icons/card.svg";
 
 export const galleryImages = {
   Gallery1,
@@ -68,6 +70,8 @@ export const icons = {
   ShapeOutline,
   Download,
   Message,
+  Shield,
+  Card,
 };
 
 export const internships = [

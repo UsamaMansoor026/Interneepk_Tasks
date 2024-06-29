@@ -17,10 +17,41 @@
   gap: 40px;
   overflow: hidden;
   overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .wrapper::-webkit-scrollbar {
   display: none;
+}
+
+.smallWrapper {
+  margin-block: 90px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.smallItem {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.smallContent h2 {
+  font-weight: 700;
+  font-size: 20px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.smallContent ul {
+  list-style: disc;
+}
+
+.smallContent ul li {
+  color: #717275;
+  margin-block: 7px;
 }
 
 /* ========================= */
@@ -54,6 +85,25 @@
 .testimonialCard p {
   position: absolute;
   bottom: 25px;
+}
+
+/* ============= */
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .smallWrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .smallItem {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .smallContent h2 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 570px) {
