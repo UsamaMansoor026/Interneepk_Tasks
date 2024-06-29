@@ -157,3 +157,42 @@ export const internshipCards = [
     name: "Technical Writing",
   },
 ];
+
+export const testimonialsData = [
+  {
+    id: 1,
+    desc: "Internee.pk is the best, most comprehensive 21st-century innovation for those students who's looking for internship and upgrade their skillsets. Their projects are tough but market value.",
+    name: "Rabia Javed",
+    location: "Karachi, Pakistan",
+  },
+  {
+    id: 2,
+    desc: "Internee.pk is all about helping us grow our carrers. May Allah give them more achievements and success on their journey.",
+    name: "Nagina Asif",
+    location: "Karachi, Pakistan",
+  },
+  {
+    id: 3,
+    desc: "Thanks to Internee.pk, I grew my skills here and now I am working as a Flutter Developer in a US company.",
+    name: "Farhan Sami",
+    location: "Islamabad, Pakistan",
+  },
+  {
+    id: 4,
+    desc: "I find Internee.pk is outstanding tool for getting hand on experience. Sometimes you have to spend a little to make a lot to develop projects.",
+    name: "Maan Mansoor",
+    location: "Attock, Pakistan",
+  },
+  {
+    id: 5,
+    desc: "Amazing Internee.pk is a gamechanger! The way their team is working is so crazy. Thank you for giving me this opportunity.",
+    name: "Naila Rozi",
+    location: "Lahore, Pakistan",
+  },
+  {
+    id: 6,
+    desc: "i would like to say, I think you have a great product and I'm excited that I found it.",
+    name: "Ayesha Laghari",
+    location: "Islamabad, Pakistan",
+  },
+];

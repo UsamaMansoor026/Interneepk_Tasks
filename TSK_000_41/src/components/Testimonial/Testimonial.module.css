@@ -1,0 +1,84 @@
+.testimonial {
+  margin-top: 80px;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: bold;
+  color: #21282e;
+  letter-spacing: -1.5px;
+  line-height: 1.3;
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  margin-block: 40px;
+  display: flex;
+  gap: 40px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* ========================= */
+/* Testimonial Card Styling */
+/* ======================= */
+.testimonialCard {
+  min-width: 480px;
+  height: 360px;
+  background: #23272b;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: inset 0 0 12px #a9a9a9;
+  padding: 35px 32px;
+  position: relative;
+  overflow: none;
+}
+
+.testimonialCard q {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.testimonialCard h2 {
+  position: absolute;
+  bottom: 50px;
+  font-size: 20px;
+  color: #ffcf5c;
+}
+
+.testimonialCard p {
+  position: absolute;
+  bottom: 25px;
+}
+
+@media screen and (max-width: 570px) {
+  .heading {
+    font-size: 32px;
+  }
+
+  .wrapper {
+    gap: 20px;
+  }
+
+  .testimonialCard {
+    min-width: 90%;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .heading {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .testimonialCard {
+    height: 500px;
+  }
+}
