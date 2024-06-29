@@ -8,6 +8,8 @@ By making this project, I learn how to use React reuseable components to render 
 
 I create many components in this project like Navbar, Cards, Footer, Blog, TypingText and many more. Though it is a SPA (Single Page Application) so there is only one page which is Home Page.
 
+I craeted a separate file in assets folder named assets.js which include all the images, icons and the dynamic data that I need in this project.
+
 # Table of Contents
 
 1. Features
