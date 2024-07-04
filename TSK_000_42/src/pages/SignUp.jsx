@@ -2,7 +2,6 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
-import UsersData from "../components/UsersData";
 
 const SignUp = () => {
   /* States for Signup fields */
@@ -12,7 +11,6 @@ const SignUp = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const navigate = useNavigate();
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -25,13 +23,13 @@ const SignUp = () => {
       } else {
         alert("Password and confirm password do not match");
       }
-
+    } catch (err) {
+      console.log(err);
+    } finally {
       setUserName("");
       setEmail("");
       setPassword("");
       setConfirmPassword("");
-    } catch (err) {
-      console.log(err);
     }
   };
 
@@ -77,9 +75,6 @@ const SignUp = () => {
           </p>
         </div>
       </section>
-
-      {/* Getting Users from database */}
-      <UsersData />
     </>
   );
 };

@@ -1,16 +1,29 @@
+import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { auth } from "../firebase";
 
 const Login = () => {
   /* States for Signup fields */
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    setEmail("");
-    setPassword("");
+    try {
+      await signInWithEmailAndPassword(auth, email, password).then(() => {
+        alert("Login successful");
+        navigate("/profile");
+      });
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setEmail("");
+      setPassword("");
+    }
   };
 
   return (
@@ -36,7 +49,7 @@ const Login = () => {
           <button type="submit">Sign Up</button>
         </form>
         <p>
-          Don't have an account? <Link to="/">Sign Up</Link>
+          Don't have an account? <Link to="/">Login</Link>
         </p>
       </div>
     </section>
