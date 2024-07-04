@@ -9,7 +9,7 @@ const Error = () => {
         display: "flex",
         justifyContent: "center",
         overflow: "hidden",
-        backgroundColor: "beige",
+        backgroundColor: "#a89bce",
       }}
     >
       <div style={{ marginTop: "70px", textAlign: "center" }}>
