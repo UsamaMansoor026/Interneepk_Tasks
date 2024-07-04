@@ -1,7 +1,8 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { auth } from "../firebase";
+import { auth, db } from "../firebase";
+import { addDoc, collection } from "firebase/firestore";
 
 const SignUp = () => {
   /* States for Signup fields */
@@ -18,18 +19,34 @@ const SignUp = () => {
       if (password === confirmPassword) {
         await createUserWithEmailAndPassword(auth, email, password).then(() => {
           alert("User Created Successfully");
-          navigate("/login");
         });
+        addDataToDb();
+
+        navigate("/login");
       } else {
         alert("Password and confirm password do not match");
+        setUserName("");
+        setEmail("");
+        setPassword("");
+        setConfirmPassword("");
       }
     } catch (err) {
       console.log(err);
-    } finally {
-      setUserName("");
-      setEmail("");
-      setPassword("");
-      setConfirmPassword("");
+    }
+  };
+
+  const addDataToDb = async () => {
+    try {
+      console.log(userName);
+      const docRef = await addDoc(collection(db, "users"), {
+        username: userName,
+        email: email,
+        password: password,
+        confirmpassword: confirmPassword,
+      });
+      console.log("doc added with ID: " + docRef.id);
+    } catch (err) {
+      console.log(err);
     }
   };
 

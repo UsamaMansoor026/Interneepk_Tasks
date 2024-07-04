@@ -1,12 +1,15 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
+import { UserContext } from "../context/UserContext";
 
 const Login = () => {
   /* States for Signup fields */
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const { setUser } = useContext(UserContext);
 
   const navigate = useNavigate();
 
@@ -16,6 +19,7 @@ const Login = () => {
     try {
       await signInWithEmailAndPassword(auth, email, password).then(() => {
         alert("Login successful");
+        setUser(true);
         navigate("/profile");
       });
     } catch (err) {
@@ -46,10 +50,10 @@ const Login = () => {
             placeholder="Enter Your Password..."
             required
           />
-          <button type="submit">Sign Up</button>
+          <button type="submit">Login</button>
         </form>
         <p>
-          Don't have an account? <Link to="/">Login</Link>
+          Don't have an account? <Link to="/">Sign Up</Link>
         </p>
       </div>
     </section>
