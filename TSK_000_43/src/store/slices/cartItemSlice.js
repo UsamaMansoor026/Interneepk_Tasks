@@ -1,27 +1,27 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, nanoid } from "@reduxjs/toolkit";
 
-const initialValue = {
-  cartItems: [{}],
+const initialState = {
+  items: [],
 };
 
 export const cartItemSlice = createSlice({
   name: "cartItems",
-  initialValue,
+  initialState,
   reducers: {
     addToCart: (state, action) => {
       const newItem = {
-        id: action.payload,
-        name: action.payload,
-        image: action.payload,
-        price: action.payload,
+        id: nanoid(),
+        name: action.payload.name,
+        image: action.payload.image,
+        price: action.payload.price,
       };
-      state.cartItems.push(newItem);
+      alert("Item added to cart successfully");
+      state.items.push(newItem);
     },
 
     removeFromCart: (state, action) => {
-      state.cartItems = state.cartItems.filter(
-        (item) => item.id !== action.payload
-      );
+      state.items = state.items.filter((item) => item.id !== action.payload);
+      alert("Item removed from cart");
     },
   },
 });
