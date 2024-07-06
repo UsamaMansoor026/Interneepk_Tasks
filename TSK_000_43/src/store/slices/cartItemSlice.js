@@ -4,6 +4,7 @@ const initialState = {
   items: [],
 };
 
+/* Cart Slicer */
 export const cartItemSlice = createSlice({
   name: "cartItems",
   initialState,
