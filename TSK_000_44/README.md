@@ -1,8 +1,13 @@
-# React + Vite
+# Rest API Example
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This react application is an example of a REST API Calls and handling the response and errors in case of something goes wrong.
 
-Currently, two official plugins are available:
+I utilize the api of Fake Store fetch the Products and display in my UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In addition to simply displaying the fetched Products, I also create some more functionalities like:
+
+1. Product pop up Deatil Modal:
+   When user click on any product, the Modal appers with the detail of that specific product.
+
+2. Remove button:
+   Each product have a remove button which handle the remove functionlaity, when user click on that button that product remove from the UI.

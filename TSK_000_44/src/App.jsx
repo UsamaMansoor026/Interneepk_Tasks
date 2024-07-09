@@ -45,6 +45,8 @@ function App() {
       <h1 style={{ textAlign: "center", marginBlock: "14px" }}>
         Example of REST_API
       </h1>
+
+      {/* Mapping through the fetched products and displaying in UI */}
       <div className="parent">
         {products ? (
           products.map((item) => (
