@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poiret One", sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+.shopName {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+}
+
+.icon:hover {
+  transform: rotateY(180deg);
+}
+
+.navList > li,
+strong {
+  font-family: "Jost", sans-serif !important;
+}
+
+.active {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+  right: 0;
+  top: calc(100% + 10px);
+  padding: 20px;
+  background: #4c4c4c;
+  z-index: 1000;
+  animation: topDown 400ms;
+}
+
+@keyframes topDown {
+  from {
+    opacity: 0;
+    top: 0;
+  }
+  to {
+    opacity: 1;
+    top: calc(100% + 10px);
+  }
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  width: 0;
+  height: 1px;
+  background: #e5bf4a;
+  transition: 300ms;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+/* Banner Text Animation */
+.animated {
+  animation: comeUp 1.2s;
+}
+
+.bannerClass {
+  height: 700px;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+}
+
+.custom {
+  z-index: 300;
+}
+
+@keyframes comeUp {
+  from {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slider */
+.slick-arrow {
+  z-index: 1000 !important;
+  border-radius: 50% !important;
+}
+
+.slick-prev {
+  left: -30px !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 30px !important;
+  color: #e5bf4a !important;
+  filter: drop-shadow(0 0 17px #aa8e3a);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .slick-prev {
+    left: 20px !important;
+  }
+
+  .slick-next {
+    right: 25px !important;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .container {
+    padding: 60px 40px;
+    align-items: center;
+    height: 300px;
+  }
+
+  .bannerClass {
+    height: 300px;
+  }
+
+  .animated {
+    font-size: 40px;
+    opacity: 1 !important;
+    z-index: 600;
+  }
+
+  .custom {
+    z-index: 300;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .testimonial {
+    grid-template-columns: 1fr;
+  }
+
+  .dash {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-inline: 10px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .customResponsive {
+    margin-inline: 12px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
